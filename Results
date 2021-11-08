@@ -1,0 +1,43 @@
+root@vishnu-VirtualBox:~# ./bill_calculator.py
+Your value: 50
+50
+root@vishnu-VirtualBox:~# ./bill_calculator.py
+Your value: 150
+200
+root@vishnu-VirtualBox:~# ./bill_calculator.py
+Your value: 800
+3900
+root@vishnu-VirtualBox:~#
+
+root@vishnu-VirtualBox:~# grep -Eo "(http://.*) " log| tr ' ' '\n'|grep -Eo "(http://.*)\"" |cut -d '"' -f 1|cut -d '\' -f 1 |uniq |xargs curl --write-out "%{http_code}\n" --silent --output /dev/null
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000
+000

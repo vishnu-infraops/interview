@@ -1,0 +1,1 @@
+ grep -Eo "(http://.*) " log| tr ' ' '\n'|grep -Eo "(http://.*)\"" |cut -d '"' -f 1|cut -d '\' -f 1 |uniq |xargs curl --write-out "%{http_code}\n" --silent --output /dev/null
